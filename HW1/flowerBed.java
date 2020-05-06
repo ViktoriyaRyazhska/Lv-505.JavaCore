@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 public class flowerBed {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Flower bed radius = ");
-        int r = Integer.parseInt(br.readLine());
+        System.out.println("Flower bed radius(cm) = ");
+        double r = Double.parseDouble(br.readLine());
         double perimeter = 2 * r * Math.PI;
         double area = r * r * Math.PI;
         System.out.println("Flower bed perimeter = " + perimeter);
