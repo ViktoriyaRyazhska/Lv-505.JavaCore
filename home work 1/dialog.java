@@ -8,16 +8,16 @@ public class dialog {
 	public static void main(String[] args) throws IOException {
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-	    System.out.println("Привіт, як тебе звати?");
+	    System.out.println("РџСЂРёРІС–С‚, СЏРє С‚РµР±Рµ Р·РІР°С‚Рё?");
 		String name = br.readLine();
-		System.out.println("на якій вулиці ти живеш?");
+		System.out.println("РЅР° СЏРєС–Р№ РІСѓР»РёС†С– С‚Рё Р¶РёРІРµС€?");
 		String live = br.readLine();
-		System.out.println("який номер будинку?");
+		System.out.println("СЏРєРёР№ РЅРѕРјРµСЂ Р±СѓРґРёРЅРєСѓ?");
 		int age = Integer.parseInt(br.readLine());
 
-		System.out.println("Здорова " + name); 
-		System.out.println("ти живеш на " + live);
-		System.out.println("в будинку №" + age);
+		System.out.println("Р—РґРѕСЂРѕРІР° " + name); 
+		System.out.println("С‚Рё Р¶РёРІРµС€ РЅР° " + live);
+		System.out.println("РІ Р±СѓРґРёРЅРєСѓ в„–" + age);
 
 		}
 }
