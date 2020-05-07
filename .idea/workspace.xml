@@ -11,11 +11,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Zapovit.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Zapovit.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Zapovit.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Homework1" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/Homework1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,6 +61,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Zapovit.txt" />
+        <option value="$PROJECT_DIR$/.idea/Homework1" />
       </list>
     </option>
   </component>
@@ -78,6 +91,11 @@
             <path>
               <item name="Lv-505.JavaCore11" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lv-505.JavaCore11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lv-505.JavaCore11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lv-505.JavaCore11" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -160,12 +178,12 @@
       <updated>1588775524375</updated>
       <workItem from="1588781129460" duration="1542000" />
       <workItem from="1588859736136" duration="1153000" />
-      <workItem from="1588872661016" duration="1296000" />
+      <workItem from="1588872661016" duration="1566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3991000" />
+    <option name="totallyTimeSpent" value="4261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -276,8 +294,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Zapovit.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/Homework1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
