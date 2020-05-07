@@ -1,0 +1,34 @@
+import java.io.BufferedReader;
+        import java.io.IOException;
+        import java.io.InputStreamReader;
+
+public class Phonecalls {
+    public static void main(String[] args) throws NumberFormatException, IOException {
+
+        int unitsperminute;
+        int minutes;
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Please input data for the first country ");
+        unitsperminute = Integer.parseInt(br.readLine());
+        minutes = Integer.parseInt(br.readLine());
+        int firstCountryPrice = unitsperminute * minutes;
+        System.out.println("Total price for the first country is " + firstCountryPrice);
+
+        System.out.println("Please input data for the second country ");
+        unitsperminute = Integer.parseInt(br.readLine());
+        minutes = Integer.parseInt(br.readLine());
+        int secondCountryPrice = unitsperminute * minutes;
+        System.out.println("Total price for the second country is " + secondCountryPrice);
+
+        System.out.println("Please input data for the third country ");
+        unitsperminute = Integer.parseInt(br.readLine());
+        minutes = Integer.parseInt(br.readLine());
+        int thirdCountryPrice = unitsperminute * minutes;
+        System.out.println("Total price for the third country is " + thirdCountryPrice);
+
+
+        System.out.println("Total price for three countries is " + (firstCountryPrice + secondCountryPrice + thirdCountryPrice));
+
+    }
+}
