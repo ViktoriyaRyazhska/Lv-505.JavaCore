@@ -6,11 +6,11 @@ public class radiys {
 	static Scanner sc = new Scanner(System.in);
 	   public static void main(String args[])
 	   {
-	      System.out.print("Введіть радіус кола: ");
+	      System.out.print("Р’РІРµРґС–С‚СЊ СЂР°РґС–СѓСЃ РєРѕР»Р°: ");
 	     	      double radius = sc.nextDouble();
 	      	      double area = Math.PI * (radius * radius);
-	      System.out.println("Площа кола = " + area);
+	      System.out.println("РџР»РѕС‰Р° РєРѕР»Р° = " + area);
 	    	      double circumference= Math.PI * 2*radius;
-	      System.out.println("Довжина кола = " + circumference) ;
+	      System.out.println("Р”РѕРІР¶РёРЅР° РєРѕР»Р° = " + circumference) ;
 	   }
 	}
