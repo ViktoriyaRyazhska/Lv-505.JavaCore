@@ -7,8 +7,8 @@ public class Perimetrandradius {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int radius = Integer.parseInt(br.readLine());
-        System.out.println("Perimetr is " + 2 * 3.14 * radius);
-        System.out.println("Area is " + 3.14 * (radius * radius));
+        System.out.println("Perimetr is " + 2 * Math.PI * radius);
+        System.out.println("Area is " + Math.PI * (radius * radius));
 
     }
 }
