@@ -17,7 +17,7 @@ public class Exampl1 {
 		System.out.println("a+b=" + (a+b));
 		System.out.println("a-b=" + (a-b));
 		System.out.println("a*b=" + (a*b));
-		if(a!=0) {
+		if(b!=0) {
 			System.out.println("a/b=" + (a/b));
 		} else {
 			System.out.println("a = 0");
