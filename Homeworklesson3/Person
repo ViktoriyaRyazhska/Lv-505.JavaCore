@@ -1,0 +1,98 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Person {
+
+    private String firstName;
+    private String lastName;
+    private int birthYear;
+    public static int currentYear = 2020;
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Person(){}
+
+    public int  getAge(){
+        return currentYear - this.birthYear;//Створив поле сurrent year і відняв від нього дату народження обєкту
+
+    }
+
+    public void output(Person person){
+        System.out.println("Output information about person is : " +person.toString() +person.getAge());//На вхід у метод поставив обєкт Person а у методі викликав йогго toString та getAge
+    }
+
+    public void input() throws IOException{
+//зчитав через Bufferedreader дані у пороржній конструктор обєкту
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Please enter first name ");
+        this.firstName = br.readLine();
+        System.out.println("Please enter second name");
+        this.lastName =br.readLine();
+        System.out.println("Please enter your age");
+        this.birthYear = Integer.parseInt(br.readLine());
+
+    }
+
+    public void changeName(String...strings) throws IOException{
+
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Please update data for the object :");
+        String change =br1.readLine();
+        switch (change) {
+            case "firstName":
+                System.out.println("Please enter new first name: ");
+                firstName = br1.readLine();
+                break;
+            case "lastName":
+                System.out.println("Please enter new last name: ");
+                lastName = br1.readLine();
+                break;
+            case "Both":
+                System.out.println("Please enter new first name and new last name:");
+                firstName = br1.readLine();
+                lastName = br1.readLine();
+                break;
+            default:
+                System.out.println("Please choose correct option");
+                break;
+        }
+    }
+
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthYear=" + birthYear +
+                '}';
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+}

@@ -1,0 +1,18 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        Employee emp1 = new Employee("Vova", 10, 10);
+        Employee emp2 = new Employee("Vasya", 8, 10);
+        Employee emp3 = new Employee("Olya", 7, 12);
+
+        System.out.println(emp1);
+        System.out.println(emp2);
+        System.out.println(emp3);
+
+        System.out.println();
+
+        System.out.println("toal salary is");
+        Employee.totalSum2();
+    }
+}
