@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebdfad90-29b0-46b5-80f0-24f86e3e5844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Homeworklesson3/MainApp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworklesson3/Person" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employee" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworklesson3PracticalTask/Employee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworklesson3PracticalTask/Main" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,7 @@
       <file leaf-file-name="Person" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homeworklesson3/Person">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="611">
               <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,11 +37,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainApp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homeworklesson3/MainApp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="204">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employee" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Homeworklesson3PracticalTask/Employee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-647">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1209#1210#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1762#1763#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homeworklesson3PracticalTask/Main">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -121,6 +148,11 @@
             </path>
             <path>
               <item name="Lv-505.JavaCore11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lv-505.JavaCore11" type="462c0819:PsiDirectoryNode" />
+              <item name="Homeworklesson3PracticalTask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lv-505.JavaCore11" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -141,6 +173,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programingBasics2\Lv-505.JavaCore11\Homeworklesson3PracticalTask" />
       <recent name="D:\programingBasics2\Lv-505.JavaCore11\Homework1" />
     </key>
   </component>
@@ -215,12 +248,12 @@
       <workItem from="1589114257696" duration="4035000" />
       <workItem from="1589272430787" duration="1410000" />
       <workItem from="1589386519530" duration="1179000" />
-      <workItem from="1589445108024" duration="5768000" />
+      <workItem from="1589445108024" duration="6580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18210000" />
+    <option name="totallyTimeSpent" value="19022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -603,30 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Employee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homework1/Addressandname">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -634,9 +643,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworklesson3PracticalTask/Main">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Homeworklesson3/Person">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
+        <state relative-caret-position="611">
           <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -657,8 +673,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Homeworklesson3/MainApp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="204">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homeworklesson3PracticalTask/Employee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-647">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
