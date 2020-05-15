@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Namethecountry {
 
-    public enum continent{Africa,America,Europe,Asia,};
+    public enum continent{Africa,America,Europe,Asia,}
 
     public static void main(String[] args)throws IOException {
 
