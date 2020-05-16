@@ -20,7 +20,7 @@ public class Exampl1 {
 		if(b!=0) {
 			System.out.println("a/b=" + (a/b));
 		} else {
-			System.out.println("a = 0");
+			System.out.println("b = 0");
 		}
  }
 }
