@@ -8,7 +8,7 @@ public class Less4 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        System.out.println("Task 1.");
         System.out.println("Enter three numbers:");
         int n1 = Integer.parseInt(br.readLine());
         int n2 = Integer.parseInt(br.readLine());
@@ -28,7 +28,8 @@ public class Less4 {
 
         System.out.println("Quantity of odd number = "+count);
         System.out.println("\n------------------------------\n");
-        System.out.println(" Enter the number of day (1-7):");
+        System.out.println("Task 2.");
+        System.out.println("Enter the number of day (1-7):");
         switch (Integer.parseInt(br.readLine())) {
             case 1
                     :System.out.println("Monday, понеділок");
@@ -57,6 +58,7 @@ public class Less4 {
 
         }
         System.out.println("\n------------------------------\n");
+        System.out.println("Task 3.");
         System.out.println("Enter the name of country: ");
         String country = br.readLine();
         switch (country.toLowerCase()){
@@ -65,47 +67,47 @@ public class Less4 {
             case "france" :
             case "poland" :
             case "spain" :
-                System.out.println(Continents.EUROPA);
+                System.out.println("This country is located in "+Continents.EUROPE);
                 break;
             case "russia" :
             case "china" :
             case "india" :
             case "japan" :
             case "nepal" :
-                System.out.println(Continents.ASIA);
+                System.out.println("This country is located in "+Continents.ASIA);
                 break;
             case "australia" :
-                System.out.println(Continents.AUSTRALIA);
+                System.out.println("This country is located in "+Continents.AUSTRALIA);
                 break;
             case "canada" :
             case "usa" :
             case "cuba" :
             case "mexico" :
             case "costa rica" :
-                System.out.println(Continents.NORTH_AMERICA);
+                System.out.println("This country is located in "+Continents.NORTH_AMERICA);
                 break;
             case "chili" :
             case "brazil" :
             case "argentina" :
             case "colombia" :
             case "peru" :
-                System.out.println(Continents.SOUTH_AMERICA);
+                System.out.println("This country is located in "+Continents.SOUTH_AMERICA);
                 break;
             case "egypt" :
             case "somali" :
             case "nigeria" :
             case "kenya" :
             case "madagascar" :
-                System.out.println(Continents.AFRICA);
+                System.out.println("This country is located in "+Continents.AFRICA);
                 break;
             case "antarctica" :
-                System.out.println(Continents.ANTARCTICA);
+                System.out.println("This country is located in "+Continents.ANTARCTICA);
             default:
                 System.out.println("Wrong input");
         }
 
         System.out.println("\n------------------------------\n");
-
+        System.out.println("Task 4.");
         Product p1 = new Product("Mouse",10,23);
         Product p2 = new Product("SD card",33,50);
         Product p3 = new Product("Keyboard",25,7);
