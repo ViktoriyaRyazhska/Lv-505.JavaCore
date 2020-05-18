@@ -1,0 +1,29 @@
+package Lesson4;
+import java.util.Scanner;
+public class HTTPError {
+private enum ErrorNum{Error400, Error401, Error402, Error403, Error404}
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the num of error: ");
+        int error = scan.nextInt();
+        switch(error) {
+        case 400:
+        	System.out.println(ErrorNum.Error400);
+        	break;
+        case 401:
+        	System.out.println(ErrorNum.Error401);
+        	break;
+        case 402:
+        	System.out.println(ErrorNum.Error402);
+        	break;
+        case 403:
+        	System.out.println(ErrorNum.Error403);
+        	break;
+        case 404:
+        	System.out.println(ErrorNum.Error404);
+        }
+        
+        	
+	}
+
+}
