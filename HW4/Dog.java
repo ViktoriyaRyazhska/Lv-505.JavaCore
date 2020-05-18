@@ -1,10 +1,11 @@
-package HW4;
+package study.homework4;
 
 import java.util.Objects;
 
 public class Dog {
+
     private String name;
-    private String breed;
+    private Breed breed;
     private int age;
 
     public String getName (){
@@ -15,11 +16,11 @@ public class Dog {
         this.name = name;
     }
 
-    public String getBreed(){
+    public Breed getBreed(){
         return this.breed;
     }
 
-    public void setBreed(String breed){
+    public void setBreed(Breed breed){
         this.breed = breed;
     }
     public int getAge(){
@@ -35,7 +36,7 @@ public class Dog {
         this.age = age;
     }
 
-    public Dog (String name, String breed, int age){
+    public Dog (String name, Breed breed, int age){
         this.name = name;
         this.breed = breed;
         this.age = age;
@@ -44,7 +45,7 @@ public class Dog {
     @Override
     public String toString() {
         return name +
-                " is a " + breed +
+                " is a " + breed.getBreed() +
                 ", age = " + age;
     }
 

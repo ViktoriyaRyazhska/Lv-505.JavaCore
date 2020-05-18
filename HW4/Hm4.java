@@ -1,4 +1,4 @@
-package HW4;
+package study.homework4;
 
 import java.util.Scanner;
 
@@ -43,16 +43,16 @@ public class Hm4 {
 
     public static int maxInt(int num1, int num2, int num3) {
 
-        int test = Integer.max(num1, num2);
-        test = Integer.max(test, num3);
+        int test = num1>num2 ? num1 : num2;
+        test = test>num3 ? test : num3;
         System.out.println("Max value is: " + test);
         return test;
     }
 
     public static int minInt(int num1, int num2, int num3) {
 
-        int test = Integer.min(num1, num2);
-        test = Integer.min(test, num3);
+        int test = num1<num2 ? num1 : num2;
+        test = test<num3 ? test : num3;
         System.out.println("Min integer is: " + test);
         return test;
     }
@@ -83,8 +83,8 @@ public class Hm4 {
     public static void dogTask() {
         System.out.println("\nTask 2.");
 
-        Dog dog1 = new Dog("Marsel", Breed.DOBERMAN.getBreed(), 12);
-        Dog dog2 = new Dog("Lana", Breed.LABRADOR.getBreed(), 8);
+        Dog dog1 = new Dog("Marsel", Breed.DOBERMAN, 12);
+        Dog dog2 = new Dog("Lana", Breed.LABRADOR, 8);
 
         System.out.println("Enter name and age of your dog:");
         String testName = sc.next();
@@ -95,22 +95,22 @@ public class Hm4 {
         int i = sc.nextInt();
         switch (i) {
                 case 1:
-                    dog3.setBreed(Breed.AKITA.getBreed());
+                    dog3.setBreed(Breed.AKITA);
                     break;
                 case 2:
-                    dog3.setBreed(Breed.BOXER.getBreed());
+                    dog3.setBreed(Breed.BOXER);
                     break;
                 case 3:
-                    dog3.setBreed(Breed.BULLDOG.getBreed());
+                    dog3.setBreed(Breed.BULLDOG);
                     break;
                 case 4:
-                    dog3.setBreed(Breed.COLLIE.getBreed());
+                    dog3.setBreed(Breed.COLLIE);
                     break;
                 case 5:
-                    dog3.setBreed(Breed.DOBERMAN.getBreed());
+                    dog3.setBreed(Breed.DOBERMAN);
                     break;
                 case 6:
-                    dog3.setBreed(Breed.LABRADOR.getBreed());
+                    dog3.setBreed(Breed.LABRADOR);
                     break;
                 default:
                     System.out.println("Wrong input");
@@ -121,13 +121,15 @@ public class Hm4 {
             System.out.println("Hooray. Our dogs have the same name.");
         } else System.out.println("All dogs have unique names.");
 
-        System.out.println(dog1.toString());
-        System.out.println(dog2.toString());
-        System.out.println(dog3.toString());
+        System.out.println(dog1);
+        System.out.println(dog2);
+        System.out.println(dog3);
 
-        Dog testDog = dog1.older(dog2);
-        testDog = testDog.older(dog3);
-        System.out.println("The oldest dog is " + testDog.getName() + ", breed: " + testDog.getBreed() + ".");
+        System.out.println(dog1.getBreed().getBreed());
+
+
+        Dog testDog = dog1.older(dog2).older(dog3);
+        System.out.println("The oldest dog is " + testDog.getName() + ", breed: " + testDog.getBreed().getBreed() + ".");
     }
 }
 

@@ -1,4 +1,4 @@
-package HW4;
+package study.homework4;
 
 public enum HttpError {
     BadRequest400 {
