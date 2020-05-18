@@ -29,6 +29,23 @@ public class ProductApp {
         } else if (p4.getQuantity() > p1.getQuantity() && p4.getQuantity() > p2.getQuantity() && p4.getQuantity() > p3.getQuantity()) {
             System.out.println("Name of the item with the biggest quantity is " + p4.getName());
         }
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
+
+        Product test = p1.biggerQuantity(p2);
+        test= test.biggerQuantity(p3);
+        test = test.biggerQuantity(p4);
+
+        System.out.println("Product which has the biggest quantity is " + test.getName());
+
+        test = p1.checkIfMoreExpensive(p2);
+        test=test.checkIfMoreExpensive(p3);
+        test = test.checkIfMoreExpensive(p4);
+
+        System.out.println("Product which is the most expensive is " + test.getName());
+
 
     }
 
