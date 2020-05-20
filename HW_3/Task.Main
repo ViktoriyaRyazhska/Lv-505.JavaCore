@@ -1,0 +1,53 @@
+package Lesson4;
+
+public class Main {
+public enum breed{Labrador,Haski,Pitbull}
+	public static void main(String[] args) {
+		Dog d1 = new Dog();
+		d1.setName("Bryan");
+		d1.setBreed(breed.Haski);
+        d1.setAge(5);
+        System.out.println(d1);
+        
+        System.out.println();
+        
+        Dog d2 = new Dog();
+		d2.setName("Lucky");
+		d2.setBreed(breed.Labrador);
+        d2.setAge(3);
+        System.out.println(d2);
+        
+        System.out.println();
+        
+        Dog d3 = new Dog();
+		d3.setName("Alex");
+		d3.setBreed(breed.Pitbull);
+        d3.setAge(7);
+        System.out.println(d3);
+        
+        System.out.println();
+        
+        System.out.println(d1.equals(d2));
+        System.out.println(d2.equals(d3));
+        
+        System.out.println();
+        
+        //Which dog is the oldest
+        if (d1.olderDog(d2)) {
+        	if(d1.olderDog(d3)) {
+        		System.out.println(d1);
+        	}
+        }
+        if(d2.olderDog(d1)) {
+        	if(d2.olderDog(d3)) {
+        		System.out.println(d2);
+        	}
+        }
+        if(d3.olderDog(d1)) {
+        	if(d3.olderDog(d2)) {
+        		System.out.println(d3);
+        	}
+        }
+	}
+
+}
