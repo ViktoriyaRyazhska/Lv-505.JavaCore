@@ -34,7 +34,6 @@ public class IntegerPositionAndMinimum {
 
             if (integers2[i] > 0 && i != 0 && integers2[i] - 1 > 0) {
 
-
                 index = i;
                 break;
 
@@ -51,7 +50,6 @@ public class IntegerPositionAndMinimum {
                 index = i;
                 System.out.println();
             }
-
         }
         System.out.println("Arrays minimum is " + min + " and its index is " + index);
 
