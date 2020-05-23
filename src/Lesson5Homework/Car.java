@@ -13,11 +13,23 @@ public class Car {
     }
 
 
+    public static Car[] ascendingSort(Car[]cars){
+        Car tmp;
 
+        for (int i = 0; i < cars.length; i++) {
+            for (int j = i + 1; j < cars.length; j++) {
 
+                if (cars[i].yearOfProduction > cars[j].yearOfProduction) {
+                    tmp = cars[j];
+                    cars[i].yearOfProduction = cars[j].getYearOfProduction();
+                    cars[j] = tmp;
 
+                }
+            }
+        }
 
-
+return cars;
+    }
 
 
 
@@ -41,6 +53,5 @@ public class Car {
     public int getEngineCapacity() {
         return engineCapacity;
     }
-
 
 }

@@ -1,11 +1,9 @@
 package Lesson5Homework;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class CarAppMain {
     public static void main(String[] args) {
-
 
         Car[] cars = {new Car("BMW", 1999, 200),
                 new Car("Audi", 2003, 333),
@@ -32,10 +30,9 @@ public class CarAppMain {
                     cars[j].yearOfProduction = tmp;
 
                 }
-
             }
-
         }
         System.out.println("Sorted in ascending order " + Arrays.toString(cars));
+
     }
 }
