@@ -49,6 +49,7 @@ public class BirdAppMain {
 
         for (Bird current : arrayOfBirds) {
             current.fly();
+
             System.out.println(current.toString());
 
         }
