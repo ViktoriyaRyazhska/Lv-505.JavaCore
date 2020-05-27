@@ -1,0 +1,19 @@
+package Lesson5;
+import java.util.Scanner;
+public class Task1 {
+
+	public static void main(String[] args) {
+        int [] month = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the month");
+		int i = scan.nextInt();
+		if(i>0 && i<=12) {
+			System.out.println(month[i - 1] + " " + "days");
+		}
+		else  {
+			System.out.println("Error");
+		}
+	}
+		
+
+}
