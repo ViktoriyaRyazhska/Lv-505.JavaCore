@@ -1,27 +1,63 @@
 package com.softserve.javacore.homework6;
 
+import com.softserve.javacore.homework5.Car;
+
+import java.util.Arrays;
+
 public abstract class Employee implements CalculatePay {
     String employeeId;
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
 
     public Employee(String employeeId) {
         this.employeeId = employeeId;
     }
 
-    public static void main(String[] args) {
-        Employee[] employees = new Employee[5];
-        employees[0] = new SalariedEmployee("101", "01021989", 8.5, 32);
-        employees[1] = new SalariedEmployee("102", "06061990", 15, 16);
-        employees[2] = new SalariedEmployee("103", "12051992", 5, 48);
-        employees[3] = new ContractEmployee("104", "03452305", 1500);
-        employees[4] = new ContractEmployee("105", "03452306", 2500);
-        employees[5] = new ContractEmployee("106", "03452307", 4200);
+    private static void sort(Employee[] arrayToSort) {
+        int j = 0;
+        for (int i = 0; i < arrayToSort.length - 1; i++) {
+            putTheMaxPayAtTheEnd(arrayToSort, arrayToSort.length - j);
+            j++;
+        }
+    }
 
-        employees[0].calculatePay();
-        employees[1].calculatePay();
-        employees[2].calculatePay();
-        employees[3].calculatePay();
-        employees[4].calculatePay();
-        employees[5].calculatePay();
+    private static void putTheMaxPayAtTheEnd(Employee[] employees, int countOfElementsToConsider) {
+        Employee temp;
+        for (int i = 0; i < countOfElementsToConsider - 1; i++) {
+            if (employees[i].calculatePay() < employees[i + 1].calculatePay()) {
+                temp = employees[i + 1];
+                employees[i + 1] = employees[i];
+                employees[i] = temp;
+            }
+        }
+    }
+
+    private static Employee[] returnEmployees() {
+        Employee[] employees = new Employee[6];
+        employees[0] = new SalariedEmployee("101", "01021989", 8.5, 200);
+        employees[1] = new SalariedEmployee("102", "06061990", 15, 50);
+        employees[2] = new SalariedEmployee("103", "12051992", 5, 168);
+        employees[3] = new ContractEmployee("104", "03452305", 4200);
+        employees[4] = new ContractEmployee("105", "03452306", 2500);
+        employees[5] = new ContractEmployee("106", "03452307", 1000);
+
+        return employees;
+    }
+
+    public static void main(String[] args) {
+
+        Employee[] employees = returnEmployees();
+        sort(employees);
+
+        System.out.println("Arranged the entire sequence of workers descending the average monthly wage: " + Arrays.toString(employees));
+        System.out.println();
+
+        for (Employee employee : employees) {
+            System.out.println("Employee: " + "EmployeeID: " + employee.getEmployeeId() + " " + "Employee average monthly wage :" + employee.calculatePay());
+        }
+
 
     }
 }
@@ -35,6 +71,7 @@ class SalariedEmployee extends Employee implements CalculatePay {
     String socialSecurityNumber;
     double hourlyRate;
     double numberOfHoursWorked;
+
 
     public SalariedEmployee(String employeeId, String socialSecurityNumber, double hourlyRate, double numberOfHoursWorked) {
         super(employeeId);
