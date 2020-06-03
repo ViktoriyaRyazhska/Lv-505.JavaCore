@@ -8,7 +8,11 @@ import java.util.Arrays;
 public class IntegerNumbers {
 
     public static void main(String[] args) throws IOException, NumberFormatException {
+
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+
 
         int[] integers = new int[10];
 
