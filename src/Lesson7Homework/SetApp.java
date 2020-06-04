@@ -37,7 +37,7 @@ public class SetApp {
         set5.add(0);
         set5.add(5);
 //Intersection of sets
-        Set<Integer> c = intersection(set4, set5);
+        Set<Integer> c = intersection(set1, set2);
         System.out.println("Intersection of sets is: ");
         System.out.println(c);
     }
