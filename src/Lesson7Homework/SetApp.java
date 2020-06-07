@@ -16,10 +16,10 @@ public class SetApp {
         set1.add(4);
 
         Set<Integer> set2 = new HashSet<>();
-        set1.add(1);
-        set1.add(2);
-        set1.add(0);
-        set1.add(5);
+        set2.add(1);
+        set2.add(2);
+        set2.add(0);
+        set2.add(5);
 //Union of sets
         Set<Integer> a = union(set1, set2);
         System.out.println("Union of sets is: ");
