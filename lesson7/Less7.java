@@ -140,6 +140,8 @@ public class Less7 {
     //Method for practical task 2
     private static void doMap() throws IOException {
 
+        System.out.println("\nTask 2.\n");
+
         Map<Integer, String> employeeMap = new LinkedHashMap<>();
         employeeMap.put(12, "Vasyl");
         employeeMap.put(1, "Orest");
@@ -149,6 +151,7 @@ public class Less7 {
         employeeMap.put(33, "Sergiy");
         employeeMap.put(9, "Vasyl");
 
+        System.out.println("Map of persons is:");
         printMapIdName(employeeMap);
 
         System.out.print("\nEnter Id, which you want to find: ");
@@ -156,9 +159,9 @@ public class Less7 {
 
         System.out.print("\nEnter name, whose id you want to find: ");
         String testName = br.readLine();
-        int[] test = findIdByName(employeeMap, testName);
+        Integer[] test = findIdByName(employeeMap, testName);
         System.out.print("Id with this name: ");
-        printArrayOfInteger(test);
+        printArray(test);
         System.out.println("\nTask 2 done!\n");
 
     }
@@ -179,7 +182,7 @@ public class Less7 {
         return findNameByID(map, Integer.parseInt(br.readLine()));
     }
 
-    private static int[] findIdByName(Map<Integer, String> map, String name) throws IOException {
+    private static Integer[] findIdByName(Map<Integer, String> map, String name) throws IOException {
 
         name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
 
@@ -192,7 +195,7 @@ public class Less7 {
                     i++;
                 }
             }
-            int[] id = new int[i];
+            Integer[] id = new Integer[i];
             for (int j = 0; j < id.length; j++) {
                 id[j] = idTest[j];
             }
@@ -203,13 +206,13 @@ public class Less7 {
         return findIdByName(map, testName);
     }
 
-    private static void printArrayOfInteger(int[] array) {
+    private static <T> void printArray(T[] array) {
         if (array.length == 1) {
             System.out.println(array[0]);
             return;
         }
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + "; ");
+        for (T t : array) {
+            System.out.print(t + "; ");
         }
         System.out.println();
     }
