@@ -12,7 +12,7 @@ public class PatterOfUScurrency {
 
 // \\$ one occurence of dollar, \\d*  is any number of digits, \\.  is only one dot, \\d{2} is only 2 digits after the dot
 
-        String pattern = "[\\$(\\d*)(\\.\\d{2})]";
+        String pattern = "\\$(\\d+)(\\.\\d{2}\\b)";
 
             Scanner sc = new Scanner(System.in);
             System.out.println("Please enter your text: ");
