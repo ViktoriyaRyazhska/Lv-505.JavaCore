@@ -3,6 +3,7 @@ package com.softserve.edu.train11b;
 public class Run1m implements Runnable {
 
 	public void run() {
+		boolean isWait = true;
 		int k;
 		System.out.println("- Thread ID = " + Thread.currentThread().getId());
 		for (int i = 0; i < 100; i++) {
@@ -23,9 +24,12 @@ public class Run1m implements Runnable {
 			synchronized (Appl.monitor) {
 			    k = Appl.sum;
 			    try {
-			    	if (k < 0) {
-			    		//Appl.monitor.wait();
+			    	if ((k < 0) && isWait) {
+			    		System.out.print("WAIT");
+			    		Appl.monitor.wait();
+			    		System.out.print("RUN");
 			    		//Appl.monitor.notifyAll();
+			    		isWait = false;
 			    	}
 			        Thread.sleep(1);
 			    } catch (InterruptedException e) {

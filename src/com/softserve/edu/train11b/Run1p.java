@@ -32,7 +32,7 @@ public class Run1p implements Runnable {
 			    }
 			    Appl.sum = k + 1;
 			    System.out.print("+");
-				//Appl.monitor.notifyAll();
+				Appl.monitor.notifyAll();
 			}
 			//
 		}
